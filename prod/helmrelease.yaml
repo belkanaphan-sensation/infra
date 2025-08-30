@@ -4,17 +4,23 @@ metadata:
   name: tournament-ss
   namespace: prod
 spec:
-  releaseName: tournament-ss-prod
+  releaseName: tournament
   chart:
     spec:
-      chart: tournament-ss-chart
-      version: 0.0.1
-  interval: 30m
+      chart: chart
+      version: 0.1.0
+      sourceRef:
+        kind: GitRepository
+        name: chart-repo
+        namespace: flux-system
+  interval: 5m
   values:
     tournament:
       enabled: true
       replicaCount: 1
       image: "ghcr.io/belkanaphan-sensation/tournament-ss:0.0.1-SNAPSHOT"
+      imagePullSecrets:
+        - name: ghcr-secret
       port: 8080
       ingress:
         enabled: false
