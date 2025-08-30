@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
-  name: tournament-ss-chart
+  name: tournament-chart
   namespace: flux-system
 spec:
   url: https://github.com/belkanaphan-sensation/chart
