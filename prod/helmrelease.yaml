@@ -33,7 +33,7 @@ spec:
           value: "sensation"
     frontend:
       enabled: false
-      image: "ghcr.io/belkanaphan-sensation/tournament-frontend:0.0.1-SNAPSHOT"
+      image: "ghcr.io/belkanaphan-sensation/tournament-frontend:0.0.1-31082025.0"
       replicaCount: 1
       port: 80
     pgadmin:
