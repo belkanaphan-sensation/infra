@@ -18,7 +18,7 @@ spec:
     tournament:
       enabled: true
       replicaCount: 1
-      image: "ghcr.io/belkanaphan-sensation/tournament-ss:0.0.1-SNAPSHOT"
+      image: "ghcr.io/belkanaphan-sensation/tournament-ss:0.0.1-31082025.0"
       imagePullSecrets:
         - name: ghcr-secret
       port: 8080
